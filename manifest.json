@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+
+  "name": "YouMark",
+  "description": "This extension lets you add markers to Youtube videos",
+  "version": "0.0.1",
+
+  "browser_action": {
+    "default_icon": "img/icon_on.png",
+    "default_title": "YouMark"
+  },
+  "background": {
+    "scripts": [
+      "background/background.js"
+    ]
+  },
+  "web_accessible_resources": [
+    "content/inject.js",
+    "img/left.svg",
+    "img/right.svg",
+    "img/report.svg"
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": ["https://www.youtube.com/*"],
+      "js": [
+        "libs/jquery.js",
+        "libs/moment.js",
+        "libs/mutation-summary.js",
+        "libs/resize-sensor.js",
+        "libs/transition.js",
+				"libs/socket.io.js",
+        "libs/uuid.min.js",
+        "content/content.js"
+      ],
+      "css": [
+        "content/content.css"
+      ]
+    }
+  ]
+}

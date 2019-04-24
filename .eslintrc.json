@@ -1,0 +1,66 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jquery": true
+  },
+	"globals": {
+    "chrome": true,
+    "MutationSummary": true,
+    "ResizeSensor": true,
+    "transition": true,
+    "moment": true,
+    "io": true,
+    "uuid": true
+  },
+	"extends": ["airbnb-base"],
+  "rules": {
+    "quotes": [
+      "error",
+      "single",
+			{
+        "allowTemplateLiterals": true
+      }
+    ],
+    "prefer-const": "error",
+    "no-var": "error",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "camelcase": "off",
+    "object-curly-newline": ["error", { "consistent": true }],
+    "no-use-before-define": ["error", { "functions": false, "variables": false }],
+    "no-new": "off",
+
+		"class-methods-use-this": "off",
+    "function-paren-newline": ["error", "consistent"],
+    "func-names": "off",
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "max-len": [
+        "error",
+        {
+          "code": 100,
+          "ignoreComments": true,
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true
+        }
+    ],
+    "no-bitwise": "off",
+    "no-console": "off",
+    "no-param-reassign": "off",
+    "no-plusplus": "off",
+    "no-underscore-dangle": "off",
+    "prefer-arrow-callback": "off",
+    "prefer-template": "off",
+    "vars-on-top": "off"
+  }
+}
+//Preferences -> Editor -> Tab Type: Hard

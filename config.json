@@ -1,0 +1,11 @@
+{
+  "development": {
+    "apiUrl": "http://127.0.0.1:4000/api/v1",
+    "socketUrl": "http://127.0.0.1:4000"
+  },
+  "production": {
+    "isProduction": true,
+    "apiUrl": "https://youmark.host/api/v1",
+    "socketUrl": "https://youmark.host"
+  }
+}
