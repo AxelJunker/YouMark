@@ -1,4 +1,4 @@
 # youmark
-This Chrome extension enables you add markers to Youtube videos
+This Chrome extension lets you add markers to Youtube videos
 
 Readme coming soon...
